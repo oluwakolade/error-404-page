@@ -1,0 +1,121 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Space Mono', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+
+nav {
+  margin-top: 2.5rem;
+  margin-left: 4.8rem;
+  font-family: "Space Mono", monospace;
+}
+
+p {
+  color: #4f4f4f;
+}
+
+p.logo {
+  font-size: 1.5rem;
+  letter-spacing: -8%;
+  line-height: 1.57rem;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+  color: #333;
+}
+section {
+  max-width: 85rem;
+  margin: 6rem auto;
+}
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 7.4rem;
+}
+
+img {
+  justify-self: start;
+  width: 100%;
+}
+
+.text {
+  justify-self: end;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.9rem;
+  letter-spacing: -3.5%;
+  color: #333;
+  margin-bottom: 2.25rem;
+}
+
+.text p {
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.22rem;
+  letter-spacing: -3.5%;
+  margin-bottom: 4rem;
+  padding-right: 14rem;
+}
+
+button {
+  color: white;
+  background: #333;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  letter-spacing: -3.5%;
+  padding: 1.1rem 2.75rem;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  margin-bottom: 5rem;
+}
+button:hover {
+  color: #333;
+  background: white;
+  border: 1px solid #333;
+}
+@media (max-width: 44rem) {
+  nav {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+  }
+
+  section {
+    max-width: 85rem;
+    margin: 5rem 2rem;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .text {
+    justify-self: end;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 4.4rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .text p {
+    font-size: 1.13rem;
+    line-height: 1.67rem;
+    margin-bottom: 4rem;
+    padding-right: 3rem;
+  }
+}
